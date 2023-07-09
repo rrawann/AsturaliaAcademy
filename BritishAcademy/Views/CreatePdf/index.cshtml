@@ -1,0 +1,146 @@
+﻿
+
+
+@if (ViewBag.FullName != null)
+{
+
+
+
+    <div class="container">
+        <div id="printPDF" style="height:auto;">
+
+            <div class="row">
+            <div class="col-xs-1 col-md-4" style="background-color:cornflowerblue;">
+                <h4 class="ser-title" style="color:black;padding:19px;">@ViewBag.FullName</h4><br /><br />
+
+
+                <div class="col-xs-1 col-md-4 ">
+
+
+                    <div class="container">
+
+                        <b>Personal information</b>
+                        <hr style="padding-bottom:30px;" class="line">
+                        <b>Date:</b><p>@ViewBag.Birthdate.ToString("dd/MM/yyyy")</p><br />
+
+                        <b>Status</b>
+                        <p>@ViewBag.Status</p><br />
+                    </div>
+
+                </div><br />
+                <div class="col-xs-1 col-md-3">
+
+                    <div class="container">
+
+                        <p><b>Contact</b></p>
+                        <hr style="padding-bottom:30px;" class="line">
+                        <b>Adress</b>
+                        <p> @ViewBag.Address</p><br />
+                        <b>Phone</b>
+                        <p>@ViewBag.Phone</p><br />
+                        <b>Email</b>
+                        <p>@ViewBag.Email</p><br />
+
+                    </div>
+
+                </div>
+
+                <div class="col-xs-1 col-md-3">
+
+
+                    <div class="container">
+
+                        <p><b>Language</b></p>
+                        <hr style="padding-bottom:30px;" class="line">
+                        <p> @ViewBag.Language</p>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="col-md-8 col-xs-2" style="color:cornflowerblue;">
+
+                <div class="col-md-6 col-xs-2">
+
+
+                    <div class="container">
+
+                        <p><b>Educations</b></p>
+                        <hr style="padding-bottom:30px;" class="line">
+                        <p>   @ViewBag.Educations</p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-xs-2">
+
+
+                    <div class="container">
+
+                        <b>Training Courses</b>
+                        <hr style="padding-bottom:30px;" class="line">
+                        <p> @ViewBag.Course</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-xs-2">
+
+
+                    <div class="container">
+
+                        <b>Skils</b>
+                        <hr style="padding-bottom:30px;" class="line">
+                        <p>@ViewBag.Skils</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+            
+        </div>
+    </div>
+
+
+}
+
+
+
+
+
+
+
+@section scripts{
+    <script>
+
+
+        function addScript(url) {
+            var script = document.createElement('script');
+            script.type = 'application/javascript';
+            script.src = url;
+            document.head.appendChild(script);
+        }
+        addScript('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js');
+
+        var element = document.getElementById('printPDF');
+        html2pdf(element);
+
+
+    </script>
+
+
+
+
+
+
+} 

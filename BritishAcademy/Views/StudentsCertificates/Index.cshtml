@@ -1,0 +1,92 @@
+﻿
+
+@{
+    ViewData["Title"] = "View";
+}
+
+@model IEnumerable<BritishAcademy.Models.showModel>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <form class="form-inline" role="form" dir="ltr">
+                        <div class="form-group">
+                            <label class="sr-only"></label>
+                            <input type="text" class="form-control" name="UserName" placeholder="User Name">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-dark" style=" background-color: saddlebrown;
+        margin-right: 5px;">
+                                Search
+                            </button>
+                            @*<a href="@Url.Action("index")" class="btn btn-dark" style="background-color:saddlebrown;">All</a>*@
+                        </div>
+                    </form>
+                </p>
+            </div>
+        </div>
+
+        <div class="polaroid3">
+
+            <div class="container">
+
+
+            </div>
+        </div>
+
+        @if (ViewBag.Message != null)
+        {
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="ser-title" style="color: saddlebrown">
+                            Your Certificates: <p style="color:dimgray">@ViewBag.Message | <a class="btn btn-primary" asp-area="" asp-controller="CreatePdf" asp-action="addInfo">CV </a> </p>
+                        </h3>
+
+                        <hr style="padding-bottom:30px;" class="line">
+                    </div>
+                    @foreach (var item in Model)
+                    {
+
+                        <div class="col-md-3">
+
+                            <div class="polaroid2">
+
+                                <div class="container">
+                                    <p style="color:saddlebrown;">
+                                        <b> @Html.DisplayFor(modelItem => item.Certificate)</b>
+                                    </p>
+                                    <p><b>  @Html.DisplayFor(modelItem => item.Course)</b></p>
+                                    <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                                    <p>
+                                        <a type="button" asp-controller="StudentsCertificates" asp-action="DownloadFileFromDatabase" asp-route-id="@item.ID">
+                                            Download
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                            </svg>
+                                        </a>
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    }
+                </div>
+
+
+            </div>
+
+        }
+
+
+
+    </div>
+
+

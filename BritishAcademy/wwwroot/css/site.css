@@ -1,0 +1,414 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+    
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 0px;
+
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /*Vertically center the text there*/
+
+}
+
+#footer {
+    background-color: saddlebrown;
+  
+
+}
+
+.ftr-tle {
+    height: 50px;
+}
+
+.info-sec {
+    color: #fff;
+}
+
+.quick-info li i {
+    font-size: 8px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: left;
+}
+
+.social-icon li {
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.bglight-blue {
+    background-color: #3498DB;
+}
+
+.bgred {
+    background-color: #E74C3C;
+}
+
+.bgdark-blue {
+    background-color: #2C3E50;
+}
+
+.bglight-blue {
+    background-color: #3498DB;
+}
+
+.top-footer {
+    padding: 40px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-line {
+    padding: 30px 0px;
+    color: #fff;
+}
+
+    .footer-line a {
+        color: #0CB8B6;
+    }
+
+.quick-info li a {
+    color: #fff;
+}
+
+.site-link, .site-link:hover, .site-link:focus {
+    color: #0cb8b6;
+    text-transform: none;
+}
+
+@media (min-width: 551px) and (max-width: 980px) {
+}
+
+@media (min-width: 220px) and (max-width: 551px) {
+    .testi-info {
+        margin-bottom: 20px;
+    }
+
+    .marb20 {
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .medi-info {
+        border: 0px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .service-info {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .caption h3 {
+        font-size: 14px;
+    }
+
+    .caption p {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .caption ul li a i {
+        font-size: 14px;
+    }
+
+    .banner-text h1 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------*/
+
+hr.botm-line {
+    height: 3px;
+    width: 60px;
+    background-color:rosybrown;
+    position: relative;
+    border: 0;
+    margin: 20px 0 20px 0;
+}
+
+
+.section-padding {
+    padding: 60px 0px;
+  
+}
+
+
+.gallery {
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-left:50px;
+    margin-bottom:10px;
+   
+   
+}
+
+    .gallery:hover {
+        border: 1px solid rosybrown;
+      
+       
+
+    }
+
+.team-img {
+    width: 200px;
+}
+
+   
+/*--------------------------------------------------------------------*/
+#International {
+    text-align: center;
+}
+.line {
+    align-items: center;
+    height: 10px;
+    width: 90px;
+   
+  
+   
+}
+
+.con{
+    background-color:white;
+
+ 
+    height:40%; 
+}
+
+.logo {
+ 
+    width: 150px;
+   
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+div.polaroid {
+    width: 100%;
+    height:90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    padding-bottom:15px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+    padding-bottom: 15px;
+}
+
+hr.botm-line2 {
+    height: 3px;
+    width: 200px;
+    background-color: rosybrown;
+    position: relative;
+    border: 0;
+    margin: 20px 0 20px 0;
+}
+/*-----------------------------------------------------------------*/
+.polaroid2 {
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+    .polaroid2:hover {
+        width: 100%;
+        height: 97%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        border: 1px solid #777;
+        border-color:saddlebrown;
+    }
+
+.polaroid3 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+ 
+    margin-bottom: 25px;
+    padding-bottom: 100px;
+}
+/*-------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+/*-----------------------------------------------------------*/
+

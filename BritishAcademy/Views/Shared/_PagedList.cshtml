@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "_PagedList";
+}
+
+
+
+@model PagedList.Core.IPagedList
+@using PagedList.Core.Mvc
+
+
+<div class="row">
+    <div class="col-sm-12 col-md-7" >
+        <pager  class="page-item"   list="@Model"
+               options="@PagedListRenderOptions.Bootstrap4PageNumbersPlusPrevAndNext"
+               asp-action="@ViewContext.RouteData.Values["Action"]"
+               param-page-number="page"  />
+
+    </div>
+    <div class="col-sm-12 col-md-5">
+        <div class="dataTables_info float-right"></div>
+    </div>
+</div>
